@@ -1,4 +1,4 @@
-# movies-api
+# MOVIES-API
 This is the backend application having rest api's which is exposed to frontend for fetching , creating, updating movies with actors and producers
 
 # SQL Script :
@@ -172,6 +172,6 @@ Base Url : 'http://localhost:8085'
 }
 
    
-    
-    
+# UNIT TEST :
+  The Unit Test has been written and code coverage is up to mark. For the Unit testing I have used JUNIT 5 and MOCKITO.
     
