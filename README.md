@@ -22,6 +22,7 @@ Base Url : 'http://localhost:8085'
     No Body Required.
     
     Response : Sample Example :
+    ```
     [
     {
         "movieId": 1,
@@ -68,12 +69,14 @@ Base Url : 'http://localhost:8085'
         }
     }
     ]
+    ```
     
 2. "/create-movie" : POST
     This API is used to create the movies by passing the details of movies like movie name , movie release date , plot and List of actors
     in movies also it can have details of Producer as well.
     
     Request Body :
+    ```
      {
         "movieName": "The Batman ",
         "plot": "DC Movie",
@@ -93,9 +96,11 @@ Base Url : 'http://localhost:8085'
             "dataOfBirth": "1987-02-24"
         }
     }
+    ```
     
     Response : It will return the movie details which have been save in DB.
     Sample Example :
+    ```
       {
     "movieId": 7,
     "movieName": "The Batman ",
@@ -118,7 +123,7 @@ Base Url : 'http://localhost:8085'
         "dataOfBirth": "1987-02-24"
     }
 }
-
+```
 
 3. "/movie/{id}" : PUT 
     This API is used to update the existing movie by passing the movieId. If movie with existing movieId found then
@@ -126,6 +131,7 @@ Base Url : 'http://localhost:8085'
     
     Request Body:
     We need to pass movie detail which needs to be update.
+    ```
     {
         "movieName": "Monkey Man ",
         "plot": "Marvel Movie",
@@ -145,9 +151,11 @@ Base Url : 'http://localhost:8085'
             "dataOfBirth": "1998-05-11"
         }
     }
+    ```
  
  Response : It will return the updated movie details.
   Sample Example :
+  ```
     {
     "movieId": 7,
     "movieName": "Monkey Man ",
@@ -170,6 +178,7 @@ Base Url : 'http://localhost:8085'
         "dataOfBirth": "1998-05-11"
     }
 }
+```
 
    
 # UNIT TEST :
